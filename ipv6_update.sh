@@ -1,4 +1,5 @@
 #!/bin/bash
+set +x 
 
 input_file=./v6-v4map.txt
 v4_addr=$(cat $input_file | cut -d" " -f2)
