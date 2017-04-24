@@ -6,8 +6,8 @@ require 'json'
 require 'time'
 
 ssl_options = {
- client_cert: OpenSSL::X509::Certificate.new(File.read('gold.pub.pem')),
- client_key:  OpenSSL::PKey::RSA.new(File.read('gold.priv.pem')),
+ client_cert: OpenSSL::X509::Certificate.new(File.read('public_key.pkcs7.pem')),
+ client_key:  OpenSSL::PKey::RSA.new(File.read('private_key.pkcs7.pem')),
  ca_file: 'gold.ca.pem',
  verify: false
 }
